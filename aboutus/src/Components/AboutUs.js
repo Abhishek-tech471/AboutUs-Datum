@@ -45,10 +45,13 @@ export default function AboutUs() {
         <div className="image">
            
            <img id="img3" src={image3} alt="Image 3" />
-           {/* <img id="img4" src={image1} alt="Image 4" /> */}
+           <img id="img4" src={image1} alt="Image 4" />
         </div>
         {/* This is text */}
         <div className="text">
+            <br />
+            <br />
+            <h1>What we do</h1>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloremque expedita nisi, quis recusandae, inventore reprehenderit. Quia dolore debitis culpa natus blanditiis beatae. Deserunt veritatis dolorem explicabo possimus tenetur temporibus!
         </div>
         <div>

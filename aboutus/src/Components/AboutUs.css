@@ -91,8 +91,8 @@ body, html {
     margin: 10px 0;
   }
 }
-.image img:hover {
+/* .image img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
-}
+} */
 
