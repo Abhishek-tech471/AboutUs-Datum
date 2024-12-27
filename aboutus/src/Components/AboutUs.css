@@ -1,0 +1,56 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #0671B7;
+  }
+
+h1{
+    font-size: 4rem;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 9em;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text{
+    max-width: 40%;
+    font-size: 1.5rem;
+}
+.image{
+    max-width: 60%;
+    
+}
+.image {
+    display: grid;
+    grid-template-areas:
+      "img1 img2"
+      "img3 img4";
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 10px; /* Space between grid items */
+    width: 100%; /* Full width of parent container */
+    max-width: 500px; /* Optional max width */
+  }
+  
+.image img {
+    grid-area: auto; /* Automatically placed in grid areas */
+    width: 100%; /* Image fills its grid cell */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures overflow is handled */
+    max-height: 200px; /* Optional max height for consistency */
+    overflow: hidden; /* Hides any overflowing content */
+  }
+
+
+
+  
