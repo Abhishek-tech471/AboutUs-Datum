@@ -12,6 +12,7 @@ export default function AboutUs() {
       <div className="content">
         {/* This is text */}
         <div className="text">
+            <h1>Who we are</h1>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere fugit eligendi odit fuga autem fugiat error blanditiis animi repellendus nam ex at numquam quisquam doloremque expedita nisi, quis recusandae, inventore reprehenderit. Quia dolore debitis culpa natus blanditiis beatae. Deserunt veritatis dolorem explicabo possimus tenetur temporibus!
         </div>
         {/* This is for images */}
@@ -28,13 +29,15 @@ export default function AboutUs() {
 
         
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
 
       {/* next part */}
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
 
       <div className="content">
         
@@ -42,22 +45,16 @@ export default function AboutUs() {
         <div className="image">
            
            <img id="img3" src={image3} alt="Image 3" />
-           <img id="img4" src={image1} alt="Image 4" />
+           {/* <img id="img4" src={image1} alt="Image 4" /> */}
         </div>
         {/* This is text */}
         <div className="text">
-            <br />
-            <br />
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloremque expedita nisi, quis recusandae, inventore reprehenderit. Quia dolore debitis culpa natus blanditiis beatae. Deserunt veritatis dolorem explicabo possimus tenetur temporibus!
         </div>
         <div>
             <img src="" alt="" />
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-
     </div>
   )
 }
