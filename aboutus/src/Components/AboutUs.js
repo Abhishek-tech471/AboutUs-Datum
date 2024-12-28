@@ -8,11 +8,10 @@ import image3 from '../Images/image3.jpg'
 export default function AboutUs() {
   return (
     <div className="main">
-          <div className="C">ABOUT US</div>
+          <div className="C animated-text">ABOUT US</div>
       <div className="content">
         {/* This is text */}
-        <div className="text">
-            <h1>Who we are</h1>
+        <div className="text animated-text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere fugit eligendi odit fuga autem fugiat error blanditiis animi repellendus nam ex at numquam quisquam doloremque expedita nisi, quis recusandae, inventore reprehenderit. Quia dolore debitis culpa natus blanditiis beatae. Deserunt veritatis dolorem explicabo possimus tenetur temporibus!
         </div>
         {/* This is for images */}
@@ -23,41 +22,42 @@ export default function AboutUs() {
            <img id="img4" src={image1} alt="Image 4" />
         </div> */}
         <div class="image">
-  <img id="img1" src={image1} alt="Image 1" />
-  <img id="img2" src={image2} alt="Image 2" />
+  <img id="img1" src={image1} alt="Image 1" className="animated-image" />
+  <img id="img2" src={image2} alt="Image 2" className="animated-image" />
 </div>
 
         
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* next part */}
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      
 
       <div className="content">
         
         {/* This is for images */}
         <div className="image">
            
-           <img id="img3" src={image3} alt="Image 3" />
-           <img id="img4" src={image1} alt="Image 4" />
+           <img id="img3" src={image3} alt="Image 3" className="animated-image" />
+           <img id="img4" src={image1} alt="Image 4" className="animated-image" />
         </div>
         {/* This is text */}
-        <div className="text">
+        <div className="text animated-text">
             <br />
             <br />
-            <h1>What we do</h1>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloremque expedita nisi, quis recusandae, inventore reprehenderit. Quia dolore debitis culpa natus blanditiis beatae. Deserunt veritatis dolorem explicabo possimus tenetur temporibus!
         </div>
         <div>
             <img src="" alt="" />
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+
     </div>
   )
 }
