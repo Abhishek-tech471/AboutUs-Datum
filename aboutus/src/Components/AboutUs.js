@@ -1,63 +1,50 @@
-import React from 'react'
-import './AboutUs.css'
-import image1 from '../Images/image1.jpg'
-import image2 from '../Images/image2.jpg'
-import image3 from '../Images/image3.jpg'
-
+import image1 from "../Images/ds.jpg";
+// import image2 from "../Images/Images/image2.jpg";
+// import image3 from "../Images/Images/image3.jpg";
+// import image4 from "../Images/dots.jpg";
+import React from "react";
+import './AboutUs.css';
+import backgroundVideo from "../Videos/abcd.mp4";
 
 export default function AboutUs() {
   return (
-    <div className="main">
-          <div className="C animated-text">ABOUT US</div>
-      <div className="content">
-        {/* This is text */}
-        <div className="text animated-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere fugit eligendi odit fuga autem fugiat error blanditiis animi repellendus nam ex at numquam quisquam doloremque expedita nisi, quis recusandae, inventore reprehenderit. Quia dolore debitis culpa natus blanditiis beatae. Deserunt veritatis dolorem explicabo possimus tenetur temporibus!
-        </div>
-        {/* This is for images */}
-        {/* <div className="image">
-           <img id="img1"  />
-           <img id="img2" src={image2}alt="Image 2" />
-           <img id="img3" src={image3} alt="Image 3" />
-           <img id="img4" src={image1} alt="Image 4" />
-        </div> */}
-        <div class="image">
-  <img id="img1" src={image1} alt="Image 1" className="animated-image" />
-  <img id="img2" src={image2} alt="Image 2" className="animated-image" />
-</div>
-
-        
+    <div>
+      <div className="about">
+        <video autoPlay loop muted className="background-video">
+          <source src={backgroundVideo} type="video/mp4" />
+          <p>Your browser does not support the video tag. Please upgrade your browser to view the video content.</p>
+        </video>
+        <h1>
+          <span className="white-text">About</span>{" "}
+          <span className="gray-text">Us</span>
+        </h1>
+        <p className="aboutp">Official Data Science Club</p>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
 
-      {/* next part */}
-
-      <div className="content">
-        
-        {/* This is for images */}
+      {/* Intro Section */}
+      <div className="intro">
+        <div className="text">
+          <h1>
+            <span class="box-decoration-slice bg-gradient-to-r from-custom-blue to-custom-blue text-white px-2 ...">Datum: Data Science Club</span>
+          </h1>
+          <p>
+            Welcome to the Official Data Science Club, the premier hub for aspiring data scientists, analysts, and enthusiasts at our college. Established with the vision of creating a collaborative environment for exploring the transformative power of data, our club is dedicated to nurturing the next generation of data-driven thinkers and innovators.
+            <br />
+            <br />
+            As the official data science organization, we foster a community where students can work on real-world projects, collaborate across disciplines, and gain exposure to industry trends. We encourage our members to think critically, solve complex problems, and use data to create impactful solutions.
+            <br />
+            <br />
+            Join us in this exciting journey of exploration and innovation. Together, let’s unlock the power of data and shape the future of technology.
+          </p>
+        </div>
         <div className="image">
-           
-           <img id="img3" src={image3} alt="Image 3" className="animated-image" />
-           <img id="img4" src={image1} alt="Image 4" className="animated-image" />
-        </div>
-        {/* This is text */}
-        <div className="text animated-text">
-            <br />
-            <br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quisquam doloremque expedita nisi, quis recusandae, inventore reprehenderit. Quia dolore debitis culpa natus blanditiis beatae. Deserunt veritatis dolorem explicabo possimus tenetur temporibus!
-        </div>
-        <div>
-            <img src="" alt="" />
+          <img src={image1} alt="Data Science Club Activities" />
         </div>
       </div>
-      <br />
-      <br />
-      <br />
+
+      {/* What we section Section */}
+
 
     </div>
-  )
+  );
 }
